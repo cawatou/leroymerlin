@@ -1,0 +1,31 @@
+{
+  "name": "leroymerlin",
+  "version": "1.0.0",
+  "description": "Тестовое задание",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "node lint.js",
+    "lintFull": "eslint \"./**/*.js\"",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cawatou/leroymerlin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cawatou/leroymerlin/issues"
+  },
+  "homepage": "https://github.com/cawatou/leroymerlin#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.12.0",
+    "mocha": "^9.2.2",
+    "supertest": "^6.2.2"
+  }
+}

@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  api:
+    container_name: nodejs-api
+    restart: always
+    build: ./
+    command: npm run start
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test: curl -sS http://0.0.0.0:3000/alive || exit 1
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 0s
